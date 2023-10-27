@@ -1,0 +1,22 @@
+{
+    "name": "with-env",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "bin": {
+        "with-env": "./with-env"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rory660/with-env.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rory660/with-env/issues"
+    },
+    "homepage": "https://github.com/rory660/with-env#readme"
+}
