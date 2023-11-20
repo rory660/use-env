@@ -14,6 +14,14 @@ with-env <command>
 
 Requires a `.env` file in your current working directory.
 
+## Options
+
+### `-f`: Use a specific `env` file (overrides default `.env` file usage)
+
+```sh
+with-env -f <env-file> <command>
+```
+
 ## Example
 
 ### `.env` File (in current working directory)

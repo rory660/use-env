@@ -1,2 +1,17 @@
-#!/bin/bash
-env $(grep -v '^#' .env | xargs) $@
+env_file=".env"  # default .env file
+
+while getopts ":f:" opt; do
+  case $opt in
+    f)
+      env_file="$OPTARG"
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
+done
+
+shift $((OPTIND - 1))
+
+env $(grep -v '^#' "$env_file" | xargs) $@
